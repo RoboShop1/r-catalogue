@@ -1,4 +1,4 @@
-name: sample one yaml
+name: sample push main flow
 on:
   push:
     branches:

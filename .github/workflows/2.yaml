@@ -1,4 +1,4 @@
-name: sample one yaml
+name: sample pull request flow
 on:
   pull_request:
     branches:
