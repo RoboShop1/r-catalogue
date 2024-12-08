@@ -1,0 +1,17 @@
+name: sample one yaml
+on:
+  pull_request:
+    branches:
+      - "main"
+jobs:
+  job1:
+    on: ["self-host"]
+    steps:
+      - name: code-checkout
+        uses: actions/checkout@v4
+      - name: print
+        run: |
+          printenv
+      - name: list
+        run: |
+          ls -la
