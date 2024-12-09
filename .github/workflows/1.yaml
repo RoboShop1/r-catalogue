@@ -21,3 +21,4 @@ jobs:
           echo "::debug:: Maked the variable"
           echo "This is my name - ${Name}"
           
+#
