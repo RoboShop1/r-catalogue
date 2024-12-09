@@ -19,6 +19,7 @@ jobs:
 
       - name: access-env
         run: |
+          export ACTIONS_RUNNER_DEBUG=true
           echo "This is my name - ${Name}"
           echo "::add-mask::${Name}"
           echo "::debug:: Maked the variable"
