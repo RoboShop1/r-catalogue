@@ -1,17 +1,13 @@
 name: sample push main flow
 on:
-  push:
-    branches:
-      - "main"
+  workflow_dispatch:
 jobs:
   job1:
     runs-on: ["self-hosted"]
     steps:
-      - name: code-checkout
-        uses: actions/checkout@v4
-      - name: print
+      - name: set-env
         run: |
-          printenv
-      - name: list
+          echo "Name=Chaitu" >> ${GITHUB_ENV}
+      - name: access-env
         run: |
-          ls -la
+          echo "This is my name - ${Name}"
