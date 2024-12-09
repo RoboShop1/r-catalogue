@@ -11,3 +11,6 @@ jobs:
       - name: access-env
         run: |
           echo "This is my name - ${Name}"
+          echo "::add-mask::${Name}"
+          echo "This is my name - ${Name}"
+          
