@@ -1,6 +1,9 @@
 name: sample push main flow
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - "main"
 jobs:
   job1:
     runs-on: ["self-hosted"]
