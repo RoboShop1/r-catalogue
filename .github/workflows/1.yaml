@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "::warning file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
 
-      - name:
+
       - name: access-env
         run: |
           echo "This is my name - ${Name}"
