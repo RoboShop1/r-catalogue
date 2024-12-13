@@ -15,3 +15,5 @@ jobs:
       - name: list
         run: |
           ls -la
+          
+          exit 1
