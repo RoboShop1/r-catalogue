@@ -11,6 +11,8 @@ spec:
     targetRevision: main
     helm:
       releaseName: catalogue
+      valueFiles:
+        - env-dev/catalogue.yaml
   destination:
     server: "https://kubernetes.default.svc"
     namespace: dev
