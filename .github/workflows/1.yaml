@@ -11,21 +11,4 @@ jobs:
       - name: set-env
         run: |
           echo "Name=Chaitu" >> ${GITHUB_ENV}
-
-      - name: warning
-        run: |
-          echo "::warning file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
-      - name: notice
-        run: |
-          echo "::notice file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
-
-
-      - name: access-env
-        run: |
-          export ACTIONS_RUNNER_DEBUG=true
-          echo "This is my name - ${Name}"
-          echo "::add-mask::${Name}"
-          echo "::debug:: Maked the variable"
-          echo "This is my name - ${Name}"
-          
 #
