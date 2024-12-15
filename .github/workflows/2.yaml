@@ -1,8 +1,6 @@
 name: sample pull request flow
 on:
-  pull_request:
-    branches:
-      - "main"
+  workflow_dispatch:
 jobs:
   job1:
     runs-on: ["self-hosted"]
