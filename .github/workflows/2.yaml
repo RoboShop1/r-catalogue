@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: code-checkout
         uses: actions/checkout@v4
-      - name: print
+      - name: prin
         run: |
           printenv
       - name: list
